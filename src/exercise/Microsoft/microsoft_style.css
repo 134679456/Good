@@ -1,0 +1,956 @@
+body {
+    margin: 0;
+    overflow-x: hidden; /* 防止水平滚动 */
+}
+
+.head {
+    display: flex;
+    margin-top: 9px;
+}
+
+.head a {
+    height: 36px;
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    cursor: pointer;
+}
+
+.head .logo {
+    width: 108px;
+    height: 23px;
+    line-height: 19px;
+    margin-left: 90px;
+    margin-top: 7px;
+    margin-right: 20px;
+}
+
+.head .text {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    height: 20px;
+    line-height: 19px;
+    margin-top: 11px;
+    padding: 0 12px;
+    font-family: "微软雅黑", serif;
+}
+
+.head .text:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.head .all {
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 11px;
+    margin-left: 484px;
+}
+
+.head .all:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.head .more {
+    position: absolute;
+    cursor: pointer;
+    height: auto;
+    width: 15px;
+    top: 24px;
+    right: 345px;
+}
+
+.head .searching {
+    font-size: 12px;
+    line-height: 19px;
+    margin-left: 31px;
+    margin-top: 11px;
+}
+
+.head .searching:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.head .search {
+    height: auto;
+    width: 19px;
+    position: absolute;
+    top: 21px;
+    right: 286px;
+    cursor: pointer;
+}
+
+.head .shopping {
+    font-size: 12px;
+    line-height: 19px;
+    margin-left: 64px;
+    margin-top: 11px;
+}
+
+.head .shopping:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.head .shop {
+    position: absolute;
+    height: auto;
+    width: 16px;
+    top: 22px;
+    right: 188px;
+    cursor: pointer;
+}
+
+.head .log-in {
+    font-size: 12px;
+    line-height: 19px;
+    margin-left: 48px;
+    margin-top: 11px;
+}
+
+.log-icon {
+    /*当你调整图片的大小时，通常建议只设置宽度或高度中的一个值，而将另一个值设置为auto，以确保图片的纵横比（宽高比）保持不变，从而避免图片变形。*/
+    height: auto;
+    width: 32px;
+    position: absolute;
+    right: 92px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.section1 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    background-color: rgb(102, 0, 0);
+}
+
+.section1 .discount {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 2px;
+}
+
+.discount:hover {
+    text-decoration: underline;
+}
+
+.section1 .right-white {
+    height: auto;
+    width: 19px;
+    transition: transform 0.33s ease; /* 持续时间0.3秒，缓动函数为ease */
+}
+
+.discount:hover + .right-white {  /*表示当鼠标悬停在某个元素上时，改变其旁边元素的样式*/
+    transform: translateX(4px);
+}
+
+.Navigation {
+    height: 62vh;
+    width: 99vw;
+    background-size: cover;
+    /* 设置背景图片在元素中央居中显示 */
+    background-position: center;
+    /* 防止背景图片重复 */
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-Sapphire-CN-MC001-3000x1682:VP5-1920x600");
+}
+
+.navigation .content {
+    z-index: 20;
+}
+
+.navigation .new {
+    position: absolute;
+    background-color: rgb(255, 185, 0);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 12px;
+    top: 218px;
+    left: 137px;
+}
+
+.navigation .learning {
+    position: absolute;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 37px;
+    font-weight: 500;
+    left: 137px;
+    top: 225px;
+}
+
+.navigation .express {
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 137px;
+    top: 325px;
+}
+
+.navigation .reserve {
+    background-color: #0078d4;
+    position: absolute;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    left: 137px;
+    top: 393px;
+    border-radius: 2px;
+}
+
+.reserve:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.bottom-act {
+    position: absolute;
+    left: 736px;
+    display: flex;
+}
+
+.bottom-act div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 66px;
+    cursor: pointer;
+}
+
+.bottom-act .begin {
+    height: auto;
+    width: 22px;
+    transition: transform 0.33s ease;
+}
+
+.bottom-act .circle {
+    height: auto;
+    width: 11px;
+}
+
+.begin1:hover {
+    transform: translateX(-6px);
+}
+
+.begin2:hover {
+    transform: translateX(6px);
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    left: 347px;
+    bottom: 2px;
+    cursor: pointer;
+}
+
+.a-icon {
+    padding: 0 21px;
+    font-size: 16px;
+    color: #0067b8;
+    font-weight: 600;
+}
+
+.diag {
+    position: absolute;
+}
+
+.six {
+    height: auto;
+    width: 40px;
+    bottom: 30px;
+    left: 32px;
+}
+
+.Surface {
+    height: auto;
+    width: 40px;
+    bottom: 30px;
+    left: 174px;
+}
+
+.Xbox {
+    height: auto;
+    width: 40px;
+    bottom: 30px;
+    left: 365px;
+}
+
+.Microsoft {
+    height: auto;
+    width: 40px;
+    bottom: 30px;
+    left: 575px;
+}
+
+.Windows {
+    height: auto;
+    width: 40px;
+    bottom: 30px;
+    left: 778px;
+}
+
+.business {
+    height: auto;
+    width: 40px;
+    bottom: 30px;
+    right: 40px;
+}
+
+.layout {
+    display: flex;
+    justify-content: center; /* 将元素整体居中 */
+    align-items: center; /* 在垂直轴上居中对齐子元素 */
+    cursor: pointer;
+    gap: 25px; /* 设置子元素之间的间隔 */
+}
+
+.every {
+    flex: 0 1 360px;
+    /*元素不会试图变大来填充父容器中的额外空间。*/
+    /*当父容器空间不足时，元素会按比例缩小。*/
+    /*元素的初始宽度是 365px。*!*/
+    height: 490px;
+    margin-top: 286px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+
+.layout img {
+    width: 360px;
+    height: 202px;
+}
+
+.summer {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 4px 12px;
+    background-color: rgb(168, 0, 0);
+    position: relative;
+    top: 17px;
+    left: 24px;
+}
+
+.seven-point-nine {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 29px;
+    position: relative;
+    left: 24px;
+}
+
+.one p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 24px;
+    margin-top: -10px;
+}
+
+.right-now {
+    background-color: #0078d4;
+    position: relative;
+    left: 24px;
+    top: 34px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.right-now:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.seven-point-one {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 29px;
+    position: relative;
+    left: 24px;
+}
+
+.two p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 24px;
+    margin-top: -10px;
+}
+
+.Series {
+    color: rgb(0, 0, 0);
+    font-weight: 540;
+    font-size: 29px;
+    position: relative;
+    left: 24px;
+    top: 22px;
+}
+
+.three p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left: 24px;
+    top: 12px;
+}
+
+.three a {
+    background-color: #0078d4;
+    position: relative;
+    left: 24px;
+    top: 82px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.three a:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.control {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 29px;
+    position: relative;
+    left: 24px;
+}
+
+.four p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 24px;
+    margin-top: -10px;
+}
+
+.four a {
+    background-color: #0078d4;
+    position: relative;
+    left: 24px;
+    top: 72px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.four a:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img3 {
+    height: auto;
+    width: 1514px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    z-index: -1; /* 确保背景图片在所有内容之下 */
+}
+
+.content-middle {
+    position: absolute;
+    height: 330px;
+    left: 209px;
+}
+
+.content-middle h2 {
+    margin-top: 60px;
+    font-size: 37px;
+    font-weight: 500;
+}
+
+.content-middle p {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    top: -5px;
+}
+
+.content-middle .one-people {
+    background-color: #0078d4;
+    position: relative;
+    top: 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.content-middle .one-people:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.content-middle .six-people {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 18px;
+    left: 25px;
+}
+
+.six-people:hover {
+    text-decoration: underline;
+}
+
+.content-middle .middle-icon {
+    position: relative;
+    left: 26px;
+    top: 24px;
+    transition: transform 0.33s ease;
+}
+
+.six-people:hover + .middle-icon {
+    transform: translateX(5px);
+}
+
+.Business {
+    position: relative;
+    font-weight: 600;
+    font-size: 37px;
+    margin-left: 85px;
+}
+
+.lasting {
+    display: flex;
+    justify-content: center; /* 将元素整体居中 */
+    align-items: center; /* 在垂直轴上居中对齐子元素 */
+    cursor: pointer;
+    gap: 25px; /* 设置子元素之间的间隔 */
+}
+
+.last1 {
+    flex: 0 1 360px;
+    /*元素不会试图变大来填充父容器中的额外空间。*/
+    /*当父容器空间不足时，元素会按比例缩小。*/
+    /*元素的初始宽度是 365px。*!*/
+    margin-top: -10px;
+    height: 490px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+
+.lasting img {
+    width: 360px;
+    height: 202px;
+}
+
+.one1 span {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    background-color: rgb(255, 185, 0);
+    position: relative;
+    top: 16px;
+    left: 26px;
+}
+
+.one1 h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 29px;
+    position: relative;
+    left: 26px;
+}
+
+.one1 p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 26px;
+    margin-top: -10px;
+}
+
+.one1 a {
+    background-color: #0078d4;
+    position: relative;
+    left: 26px;
+    top: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.one1 a:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.four1 span {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    background-color: rgb(255, 185, 0);
+    position: relative;
+    top: 16px;
+    left: 26px;
+}
+
+.four1 h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 29px;
+    position: relative;
+    left: 26px;
+}
+
+.four1 p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 26px;
+    margin-top: -10px;
+}
+
+.four1 a {
+    background-color: #0078d4;
+    position: relative;
+    left: 26px;
+    top: 29px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.four1 a:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.two1 h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 29px;
+    position: relative;
+    left: 26px;
+    top: 20px;
+}
+
+.two1 p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left: 26px;
+    top: 20px;
+}
+
+.two1 a {
+    background-color: #0078d4;
+    position: relative;
+    left: 26px;
+    top: 77px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.two1 a:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.three1 h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 29px;
+    position: relative;
+    left: 26px;
+    top: 20px;
+}
+
+.three1 p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left: 26px;
+    top: 20px;
+}
+
+.three1 a {
+    background-color: #0078d4;
+    position: relative;
+    left: 26px;
+    top: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.three1 a:hover {
+    background-color: rgb(0, 103, 184);
+}
+
+.last-knowing {
+    display: flex;
+    align-items: center;
+    height: 225px;
+}
+
+.last-knowing p {
+    margin-left: 96px;
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, serif, "黑体";
+}
+
+.last-knowing img {
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    padding: 0 9px;
+}
+
+.last-knowing .come-to-top {
+    background-color: rgba(0, 0, 0, 0.15);
+    position: relative;
+    left: 1232px;
+    top: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+
+.last-knowing .come-to-top img {
+    height: auto;
+    width: 15px;
+}
+
+.last-knowing .come-to-top span {
+    margin-right: 16px;
+}
+
+.come-to-top:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.last-nav {
+    height: 388px;
+    width: 100vw;
+    background-color: rgb(242, 242, 242);
+}
+
+.last-nav-diag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-left: -70px;
+}
+
+.last-nav-diag li {
+    list-style-type: none;
+}
+
+.last-nav-diag li:not(.new-li) {
+    cursor: pointer;
+}
+
+.last-nav-diag li:not(.new-li):hover {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: underline;
+}
+
+.last-head {
+    flex: 0 1 207.3px;
+    height: 316px;
+}
+
+.new-content .new-li {
+    color: rgb(97, 97, 97);
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 19px;
+    margin-bottom: 16px;
+}
+
+.new-content li {
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.Store .new-li {
+    color: rgb(97, 97, 97);
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 19px;
+    margin-bottom: 16px;
+}
+
+.Store li {
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.Education .new-li {
+    color: rgb(97, 97, 97);
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 19px;
+    margin-bottom: 16px;
+}
+
+.Education li {
+    margin-left: -15px;
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.Enterprise .new-li {
+    color: rgb(97, 97, 97);
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 19px;
+    margin-bottom: 16px;
+}
+
+.Enterprise li {
+    margin-left: -40px;
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.IT .new-li {
+    color: rgb(97, 97, 97);
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 19px;
+    margin-bottom: 16px;
+}
+
+.IT li {
+    margin-left: -45px;
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.firm .new-li {
+    color: rgb(97, 97, 97);
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 19px;
+    margin-bottom: 16px;
+}
+
+.firm li {
+    margin-left: -60px;
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.about {
+    height: 72px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.about a {
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+.about .earth {
+    height: auto;
+    width: 19px;
+    margin-left: 84px;
+    margin-right: 10px;
+}
+
+.about .Chinese {
+    margin-right: 20px;
+}
+
+.about .private1 {
+    margin-left: 5px;
+    margin-right: 23px;
+}
+
+.about .private2 {
+    margin-right: 474px;
+}
+
+.about .text-last {
+    padding: 0 13px;
+}
+
+.text-last:hover {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: underline;
+}
+
+.about p {
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    font-weight: 400;
+    margin-left: 12px;
+}
